@@ -34,6 +34,7 @@ def next_turn(row, column):
 
             elif check_winner() == 'Tie':
                 label.config(text=('Tie!'))
+
 def check_winner():
     for row in range(3):
         if buttons[row][0]['text'] == buttons[row][1]['text'] == buttons[row][2]['text'] != '':
@@ -70,8 +71,6 @@ def check_winner():
     else:
         return False
 
-
-
 def empty_spaces():
     spaces = 9
     for row in range(3):
@@ -83,6 +82,7 @@ def empty_spaces():
         return False
     else:
         return True
+
 def new_game():
     global  player
 
